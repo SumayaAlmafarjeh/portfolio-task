@@ -458,6 +458,10 @@ footer{
 .snapshot-card-title{
 font-size: var(--fs-subtitle);
 }
+.about-step{
+
+    margin-top: 60px;
+}
 .about-step-img{
     width:200px;
     height: 200px;
@@ -469,9 +473,25 @@ font-size: var(--fs-subtitle);
 .contact-card{
     width: 350px;
 }
+.project-card{
+     margin-bottom: 60px;
+     height:max-content ;
+}
 
 }
 @media(max-width:576px){
+        :root{
+    --fs-normal:14px;
+    --fs-header:20px;
+    --fs-header-smaller:24px;
+    --fs-title:14px;
+    --fs-subtitle:20px;
+  
+}
+      .main-container{ 
+    margin-left: 30px;
+    margin-right: 30px;
+}  
   .hero-sec-container {
         flex-direction: column-reverse;
         gap: 30px;
@@ -485,5 +505,22 @@ font-size: var(--fs-subtitle);
         align-items: center;
     }
 
-
+    .snapshot-cards-container{
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+}
+.about-step{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.project-card{
+     margin-bottom: 60px;
+     height:max-content ;
+}
+footer{
+    text-align: center;
+}
 }
